@@ -1,3 +1,9 @@
-h1 {
-    color: cornflowerblue;
-}
+@import './base/**';
+// mixin
+@import './mixin/**';
+// header, footer, ボタンなどの部品
+@import './modules/**';
+// 全ページ共通の内容
+@import './main';
+// 各ページ
+@import './pages/**';

@@ -7,7 +7,7 @@ let sass = require('gulp-sass');
 let sourcemaps = require('gulp-sourcemaps');
 let cleanCSS = require('gulp-clean-css');
 let rename = require('gulp-rename');
-
+let sassGlob = require('gulp-sass-glob');
 
 
 // 関数の実行
@@ -16,6 +16,7 @@ let rename = require('gulp-rename');
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sourcemaps.init())
+    .pipe(sassGlob())
     .pipe(sass({ outputStyle: 'compact' }))
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write('./'))

@@ -1,0 +1,13 @@
+h1 {
+    color: $base-color;
+    @include media(pc) {
+        color: $main-color;
+    }
+    @include media(tab) {
+        color: $accent-color;
+    }
+    @include media(sp) {
+        font-size: 20px;
+    }
+}
+
