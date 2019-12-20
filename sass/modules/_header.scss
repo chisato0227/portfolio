@@ -3,6 +3,8 @@ nav {
         padding: 20px 0 10px 0;
         height: auto;
         background: rgba(255,255,255,0.7);
+        position: fixed;
+        display: flex;
     
        
     }
@@ -19,6 +21,7 @@ nav ul {
     @include media(pc) {
         display: flex;
         justify-content: space-around;
+        text-align: center;
         height: 50px;
 
         

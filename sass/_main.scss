@@ -1,12 +1,13 @@
 // top=============================================
 .top {
     @include media(pc) {
-        height: 90vh;
+        height: 100vh;
         background-image: url(../img/BFF84B12-F478-4BC1-BD59-63A30AF806C9_1_105_c.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+
         
     }
     @include media(tab) {
@@ -20,11 +21,18 @@
 
 
 .top h1 {
-    font-size: 50px;
+    font-size: 70px;
+    padding: 70px 0 0 100px;
 }
 
 
 .top span {
+    display: flex;
+    justify-content: flex-end;
+    // text-align: center;
+    padding: 210px 28px 0 0;
+    font-size: 18px;
+    font-weight: bold;
     
 }
 
