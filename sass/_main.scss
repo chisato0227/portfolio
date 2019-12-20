@@ -1,13 +1,179 @@
-h1 {
-    color: $base-color;
+// top=============================================
+.top {
     @include media(pc) {
-        color: $main-color;
+        height: 90vh;
+        background-image: url(../img/BFF84B12-F478-4BC1-BD59-63A30AF806C9_1_105_c.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
     }
     @include media(tab) {
-        color: $accent-color;
+        
     }
     @include media(sp) {
-        font-size: 20px;
+        
+    }
+
+}
+
+
+.top h1 {
+    font-size: 50px;
+}
+
+
+.top span {
+    
+}
+
+
+
+
+
+// About===========================================
+.profile {
+    @include media(pc) {
+        height: 100vh;
+        
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
     }
 }
 
+
+.surname {
+    @include media(pc) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
+
+
+.firstname {
+    @include media(pc) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+
+}
+
+.name {
+    @include media(pc) {
+        display: flex;
+        
+
+
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
+
+// 好きなこと=====================================
+.travel {
+    @include media(pc) {
+        height: 80vh;
+        background-image: url(../img/89E83669-0F04-4DD6-B02A-E26E1B207D6F_1_102_o.jpeg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+
+
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
+
+.swim {
+    @include media(pc) {
+        background-image: url(../img/A9F11DC5-BC05-480F-AA71-099FDC9A7C48_1_105_c.jpeg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+         
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
+
+.create {
+    @include media(pc) {
+        height: 100vh;
+        background-image: url(../img/E98CF617-9637-4443-B2AC-EC9D5BB01425_1_105_c.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
+
+.eat {
+    @include media(pc) {
+        height: 100vh;
+        background-image: url(../img/0A969BBE-58AA-4BE8-ABA7-98FAD4F2C20B_1_201_a.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}

@@ -1,0 +1,48 @@
+nav {
+    @include media(pc) {
+        padding: 20px 0 10px 0;
+        height: auto;
+        background: rgba(255,255,255,0.7);
+    
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
+
+
+nav ul {
+    @include media(pc) {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+
+        
+       
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
+
+
+header a {
+    @include media(pc) {
+        font-size: 15px;
+        
+
+    }
+    @include media(tab) {
+        
+    }
+    @include media(sp) {
+        
+    }
+}
