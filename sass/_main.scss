@@ -1,13 +1,19 @@
 // top=============================================
 .top {
+    height: 100vh;
+    background-image: url(../img/30032736-8763-4428-8193-A7909433B8BB_1_105_c.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 250px;
+    color: $main-color;
+    
     @include media(pc) {
-        height: 100vh;
-        background-image: url(../img/BFF84B12-F478-4BC1-BD59-63A30AF806C9_1_105_c.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-
         
     }
     @include media(tab) {
@@ -22,17 +28,39 @@
 
 .top h1 {
     font-size: 70px;
-    padding: 70px 0 0 100px;
+    -webkit-text-stroke: 1px black;
+//     padding: 70px 0 0 100px;
+
+@include media(pc) {
+        
+}
+@include media(tab) {
+    
+}
+@include media(sp) {
+    
+}
 }
 
 
 .top span {
-    display: flex;
-    justify-content: flex-end;
-    // text-align: center;
-    padding: 210px 28px 0 0;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+//     display: flex;
+//     justify-content: center;
+//     // text-align: center;
+//     padding: 210px 28px 0 0;
+//     font-size: 18px;
+    font-weight: 100;
+    -webkit-text-stroke: 0.2px black;
+// @include media(pc) {
+        
+// }
+// @include media(tab) {
+    
+// }
+// @include media(sp) {
+    
+// }
     
 }
 
@@ -42,9 +70,19 @@
 
 // About===========================================
 .profile {
+    height: 100vh;
+    background-image: url(../img/BFF84B12-F478-4BC1-BD59-63A30AF806C9_1_105_c.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px 80px 170px;
+
+
     @include media(pc) {
-        height: 100vh;
-        
+    
     }
     @include media(tab) {
         
@@ -56,12 +94,13 @@
 
 
 .surname {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    
     @include media(pc) {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-
        
     }
     @include media(tab) {
@@ -74,12 +113,13 @@
 
 
 .firstname {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+    
     @include media(pc) {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-
        
     }
     @include media(tab) {
@@ -89,12 +129,20 @@
         
     }
 
+}
+
+.huragana {
+    font-size: 20px;
+}
+
+.kanji {
+    font-size: 40px;
 }
 
 .name {
+    display: flex;
+    
     @include media(pc) {
-        display: flex;
-        
 
 
        
@@ -105,19 +153,25 @@
     @include media(sp) {
         
     }
+}
+
+.about {
+    color: $main-color;
+    padding: 150px 0 0 80px;
+    font-size: 20px;
 }
 
 // 好きなこと=====================================
-.travel {
+.travel-bg {
+    height: 80vh;
+    background-image: url(../img/89E83669-0F04-4DD6-B02A-E26E1B207D6F_1_102_o.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
     @include media(pc) {
-        height: 80vh;
-        background-image: url(../img/89E83669-0F04-4DD6-B02A-E26E1B207D6F_1_102_o.jpeg);
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        
 
 
        
@@ -130,15 +184,21 @@
     }
 }
 
-.swim {
+.cover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.swim-bg {
+    background-image: url(../img/A9F11DC5-BC05-480F-AA71-099FDC9A7C48_1_105_c.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
     @include media(pc) {
-        background-image: url(../img/A9F11DC5-BC05-480F-AA71-099FDC9A7C48_1_105_c.jpeg);
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-         
+    
     }
     @include media(tab) {
         
@@ -148,15 +208,17 @@
     }
 }
 
-.create {
+.create-bg {
+    height: 100vh;
+    background-image: url(../img/E98CF617-9637-4443-B2AC-EC9D5BB01425_1_105_c.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
     @include media(pc) {
-        height: 100vh;
-        background-image: url(../img/E98CF617-9637-4443-B2AC-EC9D5BB01425_1_105_c.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-       
+    
     }
     @include media(tab) {
         
@@ -166,15 +228,15 @@
     }
 }
 
-.eat {
+.eat-bg {
+    height: 100vh;
+    background-image: url(../img/0A969BBE-58AA-4BE8-ABA7-98FAD4F2C20B_1_201_a.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
     @include media(pc) {
-        height: 100vh;
-        background-image: url(../img/0A969BBE-58AA-4BE8-ABA7-98FAD4F2C20B_1_201_a.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-
 
        
     }
